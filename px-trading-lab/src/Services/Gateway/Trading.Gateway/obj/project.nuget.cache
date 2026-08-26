@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CHf0TLrAt7M=",
+  "dgSpecHash": "T0/krYbwciE=",
   "success": true,
   "projectFilePath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Gateway\\Trading.Gateway\\Trading.Gateway.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ricardo\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

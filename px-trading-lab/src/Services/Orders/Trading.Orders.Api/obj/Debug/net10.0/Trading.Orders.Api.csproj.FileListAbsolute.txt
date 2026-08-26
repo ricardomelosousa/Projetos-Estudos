@@ -31,3 +31,4 @@ C:\Projetos Estudos\px-trading-lab\src\Services\Orders\Trading.Orders.Api\obj\De
 C:\Projetos Estudos\px-trading-lab\src\Services\Orders\Trading.Orders.Api\obj\Debug\net10.0\Trading.Orders.Api.pdb
 C:\Projetos Estudos\px-trading-lab\src\Services\Orders\Trading.Orders.Api\obj\Debug\net10.0\Trading.Orders.Api.genruntimeconfig.cache
 C:\Projetos Estudos\px-trading-lab\src\Services\Orders\Trading.Orders.Api\obj\Debug\net10.0\ref\Trading.Orders.Api.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Orders\Trading.Orders.Api\obj\Debug\net10.0\Trading.Orders.Api.sourcelink.json

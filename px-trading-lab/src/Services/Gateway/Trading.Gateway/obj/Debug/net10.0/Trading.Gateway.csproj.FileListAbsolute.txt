@@ -26,3 +26,8 @@ C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debu
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.pdb
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.genruntimeconfig.cache
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\ref\Trading.Gateway.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\bin\Debug\net10.0\System.IO.Hashing.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\bin\Debug\net10.0\Yarp.ReverseProxy.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.csproj.AssemblyReference.cache
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.sourcelink.json
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading..7A8D399D.Up2Date
