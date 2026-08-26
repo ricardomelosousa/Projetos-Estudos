@@ -1,0 +1,47 @@
+services:
+
+  orders-api:
+    container_name: trading-orders-api
+
+    build:
+      context: .
+      dockerfile: src/Services/Orders/Trading.Orders.Api/Dockerfile
+
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: 8080
+
+    ports:
+      - "8081:8080"
+
+    networks:
+      - trading-network
+
+
+  gateway:
+    container_name: trading-gateway
+
+    build:
+      context: .
+      dockerfile: src/Services/Gateway/Trading.Gateway/Dockerfile
+
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: 8080
+
+      ReverseProxy__Clusters__orders-cluster__Destinations__orders-api__Address: http://orders-api:8080/
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - orders-api
+
+    networks:
+      - trading-network
+
+
+networks:
+
+  trading-network:
+    driver: bridge

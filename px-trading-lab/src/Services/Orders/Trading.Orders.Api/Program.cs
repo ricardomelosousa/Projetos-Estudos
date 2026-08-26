@@ -59,7 +59,7 @@ app.MapGet("/api/orders/{id:guid}", (Guid id) =>
    return orders.TryGetValue(id, out var order) ? Results.Ok(order) : Results.NotFound();
 });
 
-app.MapGet("/healh/live", ()=> Results.Ok(new {status = "Healthy", service = "Trading.Orders.Api"}));
+app.MapGet("/healh/live", ()=> Results.Ok(new {status = "Healthy", service = "Trading.Orders.Api", data = DateTime.Now}));
 
 app.Run();
 
