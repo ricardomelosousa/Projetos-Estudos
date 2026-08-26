@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Gateway/">
+    <Project Path="src/Services/Gateway/Trading.Gateway/Trading.Gateway.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Market/">
+    <Project Path="src/Services/Market/Trading.Market.Api/Trading.Market.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Orders/">
+    <Project Path="src/Services/Orders/Trading.Orders.Api/Trading.Orders.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Workers/" />
+  <Folder Name="/src/Workers/TradeProcessor/">
+    <Project Path="src/Workers/TradeProcessor/Trading.TradeProcessor.Worker/Trading.TradeProcessor.Worker.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projetos Estudos\\px-trading-lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\trading.orders.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\trading.orders.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Trading.Orders.Api.http",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-08-26T19:49:19.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
