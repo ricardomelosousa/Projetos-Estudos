@@ -10,19 +10,61 @@ Nossa sequência
 
 Vamos fazer o projeto em etapas, porque jogar Docker + Kafka + Kubernetes + Dynatrace ao mesmo tempo esconderia o aprendizado.
 
-Criar a Solution .NET 10 e as primeiras APIs.
-Criar o YARP Gateway.
-Criar PostgreSQL + EF Core.
-Implementar criação de ordens.
-Dockerizar cada aplicação.
-Criar docker-compose.yml.
-Adicionar Kafka.
-Adicionar Kafka UI.
-Criar TradeProcessor.
-Implementar Transactional Outbox.
-Implementar idempotência.
-Observabilidade + Dynatrace.
-Kubernetes local.
-Escalar Orders API para vários Pods.
-Derrubar Pods propositalmente e estudar resiliência.
-Levar para Azure/AKS.
+Etapas:
+
+ETAPA 1 ✅
+.NET 10
+Orders API
+YARP Gateway
+
+        ↓
+
+ETAPA 2 ✅
+Dockerfile
+Docker network
+Docker Compose
+
+        ↓
+
+ETAPA 3
+PostgreSQL
+EF Core
+Migrations
+
+        ↓
+
+ETAPA 4
+Transactional Outbox
+
+        ↓
+
+ETAPA 5
+Kafka + Kafka UI
+
+        ↓
+
+ETAPA 6
+Trade Processor
+
+        ↓
+
+ETAPA 7
+Idempotência
+Retry
+DLQ
+
+        ↓
+
+ETAPA 8
+OpenTelemetry
+Dynatrace
+
+        ↓
+
+ETAPA 9
+Kubernetes
+
+        ↓
+
+ETAPA 10
+Azure AKS
