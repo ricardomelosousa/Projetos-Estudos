@@ -26,14 +26,14 @@ Docker Compose
 
         ↓
 
-ETAPA 3
+ETAPA 3 ✅
 PostgreSQL
 EF Core
 Migrations
 
         ↓
 
-ETAPA 4
+ETAPA 4 ✅
 Transactional Outbox
 
         ↓
