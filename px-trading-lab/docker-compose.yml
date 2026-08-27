@@ -1,5 +1,30 @@
 services:
 
+  postgres:
+    image: postgres:18
+    container_name: trading-postgres
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trading -d trading_orders"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
+    environment:
+      POSTGRES_DB: trading_orders
+      POSTGRES_USER: trading
+      POSTGRES_PASSWORD: trading123
+
+    ports:
+      - "5432:5432"
+    
+    volumes:
+      - trading-postgres-data:/var/lib/postgresql
+
+    networks:
+      - trading-network
+
   orders-api:
     container_name: trading-orders-api
 
@@ -10,9 +35,12 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: 8080
-
-    ports:
-      - "8081:8080"
+      
+      ConnectionStrings__OrdersDatabase: Host=postgres;Port=5432;Database=trading_orders;Username=trading;Password=trading123
+    
+    depends_on:
+      postgres:
+        condition: service_healthy
 
     networks:
       - trading-network
@@ -45,3 +73,6 @@ networks:
 
   trading-network:
     driver: bridge
+
+volumes:
+  trading-postgres-data:
