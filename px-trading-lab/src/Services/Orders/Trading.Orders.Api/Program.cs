@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Trading.Orders.Api.Contracts;
 using Trading.Orders.Api.Data;
@@ -33,19 +34,19 @@ app.MapPost("/api/orders", async (CreateOrderRequest request, OrdersDbContext db
 {
     if (string.IsNullOrWhiteSpace(request.AccountId))
     {
-        return Results.BadRequest(new {error = "AccountId is required."});
+        return Results.BadRequest(new { error = "AccountId is required." });
     }
     if (string.IsNullOrWhiteSpace(request.Symbol))
     {
-        return Results.BadRequest(new {error = "Symbol is required."});
+        return Results.BadRequest(new { error = "Symbol is required." });
     }
-    if(request.Quantity <= 0)
+    if (request.Quantity <= 0)
     {
-        return Results.BadRequest(new {error = "Quantity must be greater than zero."});
+        return Results.BadRequest(new { error = "Quantity must be greater than zero." });
     }
-    if(request.Price <= 0)
+    if (request.Price <= 0)
     {
-        return Results.BadRequest(new {error = "Price must be greater than zero."});
+        return Results.BadRequest(new { error = "Price must be greater than zero." });
     }
 
     var order = new Order
@@ -59,8 +60,28 @@ app.MapPost("/api/orders", async (CreateOrderRequest request, OrdersDbContext db
         Status = OrderStatus.Received,
         CreatedAt = DateTimeOffset.UtcNow
     };
+    var @event = new OrderCreatedEvent(order.Id,
+        order.AccountId,
+        order.Symbol,
+        order.Side.ToString(),
+        order.Quantity,
+        order.Price,
+        order.CreatedAt);
+
+    var payload = JsonSerializer.Serialize(@event);
+
+    var outboxMessage = new OutboxMessage
+    {
+        Id = Guid.NewGuid(),
+        Type = nameof(OrderCreatedEvent),
+        Payload = payload,
+        OccurredAt = DateTimeOffset.UtcNow,
+        ProcessedAt = null,
+        RetryCount = 0
+    };
 
     dbContext.Orders.Add(order);
+    dbContext.OutboxMessages.Add(outboxMessage);
     await dbContext.SaveChangesAsync(cancellationToken);
 
     return Results.Created($"/api/orders/{order.Id}", new CreateOrderResponse(order.Id, order.Status.ToString()));
@@ -68,11 +89,11 @@ app.MapPost("/api/orders", async (CreateOrderRequest request, OrdersDbContext db
 
 app.MapGet("/api/orders/{id:guid}", async (Guid id, OrdersDbContext dbContext, CancellationToken cancellationToken) =>
 {
-    var order = await dbContext.Orders.AsNoTracking().FirstOrDefaultAsync(x=> x.Id == id, cancellationToken);
+    var order = await dbContext.Orders.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     return order is not null ? Results.Ok(order) : Results.NotFound();
 });
 
-app.MapGet("/healh/live", ()=> Results.Ok(new {status = "Healthy", service = "Trading.Orders.Api", data = DateTime.Now}));
+app.MapGet("/healh/live", () => Results.Ok(new { status = "Healthy", service = "Trading.Orders.Api", data = DateTime.Now }));
 
 app.Run();
 

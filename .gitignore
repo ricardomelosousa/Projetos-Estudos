@@ -1,2 +1,19 @@
 /AndroidApp1
 /OrderAPI
+/px-trading-lab/Trading.slnx
+/.gitignore
+# Pastas de build do .NET
+[Bb]in/
+[Oo]bj/
+
+# Arquivos de usuário e cache do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Pastas de pacotes
+packages/
+.nuget/
+/px-trading-lab/src/Services/Gateway/Trading.Gateway/obj/Debug/net10.0/Trading.Gateway.GeneratedMSBuildEditorConfig.editorconfig
