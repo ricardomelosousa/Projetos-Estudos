@@ -38,7 +38,7 @@ Transactional Outbox
 
         ↓
 
-ETAPA 5
+ETAPA 5 ✅
 Kafka + Kafka UI
 
         ↓
