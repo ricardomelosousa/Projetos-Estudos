@@ -31,3 +31,4 @@ C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\bin\Debu
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.csproj.AssemblyReference.cache
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading.Gateway.sourcelink.json
 C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\Trading..7A8D399D.Up2Date
+C:\Projetos Estudos\px-trading-lab\src\Services\Gateway\Trading.Gateway\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

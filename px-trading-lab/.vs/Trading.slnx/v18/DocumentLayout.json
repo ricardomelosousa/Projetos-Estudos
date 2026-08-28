@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Projetos Estudos\\px-trading-lab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\trading.orders.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\trading.orders.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\backgroundservices\\outboxpublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\backgroundservices\\outboxpublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF18D470-99F4-495E-9857-4C6EACACF89C}|Solution Items{EF18D470-99F4-495E-9857-4C6EACACF89C}|C:\\Projetos Estudos\\px-trading-lab\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{EF18D470-99F4-495E-9857-4C6EACACF89C}|Solution Items{EF18D470-99F4-495E-9857-4C6EACACF89C}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\configuration\\kafkaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\configuration\\kafkaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\data\\configurations\\outboxmessageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\data\\configurations\\outboxmessageconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\data\\ordersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\data\\ordersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,20 +50,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Trading.Orders.Api.http",
-              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
-              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
-              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
-              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-08-26T19:49:19.209Z",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\appsettings.Development.json",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-28T00:42:04.949Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OutboxPublisherService.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T23:21:02.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KafkaOptions.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Configuration\\KafkaOptions.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Configuration\\KafkaOptions.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Configuration\\KafkaOptions.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Configuration\\KafkaOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T23:13:12.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\appsettings.json",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\appsettings.json",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-27T23:07:16.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwGUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-08-27T21:17:51.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAACMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T19:00:11.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersDbContext.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Data\\OrdersDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Data\\OrdersDbContext.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Data\\OrdersDbContext.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Data\\OrdersDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T18:59:20.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OutboxMessageConfiguration.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Data\\Configurations\\OutboxMessageConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Data\\Configurations\\OutboxMessageConfiguration.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Data\\Configurations\\OutboxMessageConfiguration.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Data\\Configurations\\OutboxMessageConfiguration.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T18:54:07.369Z",
+              "EditorCaption": ""
             }
           ]
         }

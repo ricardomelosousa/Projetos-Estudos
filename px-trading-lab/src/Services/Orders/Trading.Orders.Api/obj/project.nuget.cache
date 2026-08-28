@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dUWC03uT8Hc=",
+  "dgSpecHash": "9poaVYP2tS4=",
   "success": true,
   "projectFilePath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ricardo\\.nuget\\packages\\confluent.kafka\\2.15.0\\confluent.kafka.2.15.0.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\librdkafka.redist\\2.15.0\\librdkafka.redist.2.15.0.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.build\\17.7.2\\microsoft.build.17.7.2.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.build.framework\\17.14.28\\microsoft.build.framework.17.14.28.nupkg.sha512",

@@ -46,3 +46,4 @@ C:\Projetos Estudos\px-trading-lab\src\Workers\TradeProcessor\Trading.TradeProce
 C:\Projetos Estudos\px-trading-lab\src\Workers\TradeProcessor\Trading.TradeProcessor.Worker\obj\Debug\net10.0\Trading.TradeProcessor.Worker.pdb
 C:\Projetos Estudos\px-trading-lab\src\Workers\TradeProcessor\Trading.TradeProcessor.Worker\obj\Debug\net10.0\Trading.TradeProcessor.Worker.genruntimeconfig.cache
 C:\Projetos Estudos\px-trading-lab\src\Workers\TradeProcessor\Trading.TradeProcessor.Worker\obj\Debug\net10.0\ref\Trading.TradeProcessor.Worker.dll
+C:\Projetos Estudos\px-trading-lab\src\Workers\TradeProcessor\Trading.TradeProcessor.Worker\obj\Debug\net10.0\Trading.TradeProcessor.Worker.sourcelink.json

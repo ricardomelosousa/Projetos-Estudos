@@ -1,6 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Collections.Concurrent;
 using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
+using Trading.Orders.Api.BackgroundServices;
+using Trading.Orders.Api.Configuration;
 using Trading.Orders.Api.Contracts;
 using Trading.Orders.Api.Data;
 using Trading.Orders.Api.Models;
@@ -15,6 +18,11 @@ builder.Services.AddDbContext<OrdersDbContext>(options =>
 {
     options.UseNpgsql(connectionString);
 });
+
+builder.Services.Configure<KafkaOptions>(builder.Configuration.GetSection(KafkaOptions.SectionName));
+builder.Services.AddSingleton(sp =>
+    sp.GetRequiredService<IOptions<KafkaOptions>>().Value);
+builder.Services.AddHostedService<OutboxPublisherService>();
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

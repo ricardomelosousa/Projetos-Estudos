@@ -31,3 +31,5 @@ C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\De
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\Trading.Market.Api.pdb
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\Trading.Market.Api.genruntimeconfig.cache
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\ref\Trading.Market.Api.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\Trading.Market.Api.sourcelink.json
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
