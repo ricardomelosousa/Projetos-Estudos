@@ -103,6 +103,14 @@ app.MapGet("/api/orders/{id:guid}", async (Guid id, OrdersDbContext dbContext, C
 
 app.MapGet("/healh/live", () => Results.Ok(new { status = "Healthy", service = "Trading.Orders.Api", data = DateTime.Now }));
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider
+        .GetRequiredService<OrdersDbContext>();
+
+    dbContext.Database.Migrate();
+}
+
 app.Run();
 
 

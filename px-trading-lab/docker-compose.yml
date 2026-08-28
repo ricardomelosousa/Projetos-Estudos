@@ -1,15 +1,15 @@
 services:
 
-  postgres:
+  orders-postgres:
     image: postgres:18
-    container_name: trading-postgres
+    container_name: trading-orders-postgres
 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U trading -d trading_orders"]
-      interval: 1m30s
-      timeout: 30s
+      interval: 10s
+      timeout: 5s
       retries: 5
-      start_period: 30s
+      start_period: 10s
 
     environment:
       POSTGRES_DB: trading_orders
@@ -18,14 +18,40 @@ services:
 
     ports:
       - "5432:5432"
-    
+
     volumes:
-      - trading-postgres-data:/var/lib/postgresql
+      - trading-orders-postgres-data:/var/lib/postgresql
 
     networks:
       - trading-network
 
-  
+
+  trades-postgres:
+    image: postgres:18
+    container_name: trading-trades-postgres
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U trading -d trading_trades"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+    environment:
+      POSTGRES_DB: trading_trades
+      POSTGRES_USER: trading
+      POSTGRES_PASSWORD: trading123
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - trading-trades-postgres-data:/var/lib/postgresql
+
+    networks:
+      - trading-network
+
+
   kafka:
     image: apache/kafka:4.3.1
 
@@ -36,9 +62,8 @@ services:
 
     ports:
       - "9092:9092"
-     
-    environment:
 
+    environment:
       KAFKA_NODE_ID: 1
 
       KAFKA_PROCESS_ROLES: broker,controller
@@ -64,6 +89,7 @@ services:
     networks:
       - trading-network
 
+
   kafka-ui:
     image: ghcr.io/kafbat/kafka-ui:latest
 
@@ -73,37 +99,57 @@ services:
       - "8085:8080"
 
     environment:
-
       KAFKA_CLUSTERS_0_NAME: trading-local
-
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
 
     depends_on:
       - kafka
 
     networks:
-       - trading-network
+      - trading-network
+
 
   kafka-init:
-   image: apache/kafka:latest
-   depends_on:
-     - kafka
-   entrypoint: ["/bin/sh", "-c"]
-   command: >
-     "docker exec -it trading-kafka bash
+    image: apache/kafka:4.3.1
 
-     /opt/kafka/bin/kafka-topics.sh
-     --bootstrap-server kafka:9092
-     --create
-     --if-not-exists
-     --topic orders.created
-     --partitions 3
-     --replication-factor 1
-     "
-   
-   #docker exec -it trading-kafka bash
-   
-   #/opt/kafka/bin/kafka-topics.sh --create --topic orders.created --bootstrap-server kafka:9092 --partitions 3 --replication-factor 1
+    container_name: trading-kafka-init
+
+    depends_on:
+      - kafka
+
+    entrypoint: ["/bin/sh", "-c"]
+
+    command: >
+      "
+        echo 'Aguardando Kafka...' ;
+
+        until /opt/kafka/bin/kafka-topics.sh
+          --bootstrap-server kafka:9092
+          --list > /dev/null 2>&1;
+        do
+          sleep 2;
+        done;
+
+        echo 'Kafka disponível. Criando tópico...' ;
+
+        /opt/kafka/bin/kafka-topics.sh
+          --bootstrap-server kafka:9092
+          --create
+          --if-not-exists
+          --topic orders.created
+          --partitions 3
+          --replication-factor 1;
+
+        echo 'Tópicos disponíveis:' ;
+
+        /opt/kafka/bin/kafka-topics.sh
+          --bootstrap-server kafka:9092
+          --list;
+      "
+
+    networks:
+      - trading-network
+
 
   orders-api:
     container_name: trading-orders-api
@@ -115,16 +161,47 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: 8080
-      
-      ConnectionStrings__OrdersDatabase: Host=postgres;Port=5432;Database=trading_orders;Username=trading;Password=trading123
+
+      ConnectionStrings__OrdersDatabase: Host=orders-postgres;Port=5432;Database=trading_orders;Username=trading;Password=trading123
+
       Kafka__BootstrapServers: kafka:9092
       Kafka__Topics__OrderCreated: orders.created
-    
+
     depends_on:
-      postgres:
+      orders-postgres:
         condition: service_healthy
+
       kafka:
-       condition: service_started
+        condition: service_started
+
+    networks:
+      - trading-network
+
+
+  trade-processor:
+    container_name: trading-trade-processor
+
+    build:
+      context: .
+      dockerfile: src/Workers/TradeProcessor/Trading.TradeProcessor.Worker/Dockerfile
+
+    environment:
+      DOTNET_ENVIRONMENT: Development
+
+      ConnectionStrings__Postgres: Host=trades-postgres;Port=5432;Database=trading_trades;Username=trading;Password=trading123
+
+      Kafka__BootstrapServers: kafka:9092
+      Kafka__GroupId: trade-processor
+      Kafka__Topics__OrderCreated: orders.created
+
+    depends_on:
+      trades-postgres:
+        condition: service_healthy
+
+      kafka:
+        condition: service_started
+
+    restart: unless-stopped
 
     networks:
       - trading-network
@@ -152,13 +229,17 @@ services:
     networks:
       - trading-network
 
- 
 
 networks:
 
   trading-network:
     driver: bridge
 
+
 volumes:
-  trading-postgres-data:
+
+  trading-orders-postgres-data:
+
+  trading-trades-postgres-data:
+
   kafka-data:

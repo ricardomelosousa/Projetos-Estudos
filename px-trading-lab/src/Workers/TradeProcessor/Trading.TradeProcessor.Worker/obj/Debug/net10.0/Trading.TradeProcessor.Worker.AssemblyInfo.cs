@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trading.TradeProcessor.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e708af1735743776dab70840a2b538dbc3b265fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82da6607bb6835255d19d69139ce0c9de53c918b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trading.TradeProcessor.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trading.TradeProcessor.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
