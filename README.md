@@ -43,7 +43,7 @@ Kafka + Kafka UI
 
         ↓
 
-ETAPA 6
+ETAPA 6 ✅
 Trade Processor
 
         ↓
