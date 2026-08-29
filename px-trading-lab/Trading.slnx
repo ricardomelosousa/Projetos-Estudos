@@ -13,6 +13,9 @@
   <Folder Name="/src/Services/Orders/">
     <Project Path="src/Services/Orders/Trading.Orders.Api/Trading.Orders.Api.csproj" />
   </Folder>
+  <Folder Name="/src/Services/Wallets/">
+    <Project Path="src/Services/Wallets/Trading.Wallet.Api/Trading.Wallet.Api.csproj" />
+  </Folder>
   <Folder Name="/src/Workers/" />
   <Folder Name="/src/Workers/TradeProcessor/">
     <Project Path="src/Workers/TradeProcessor/Trading.TradeProcessor.Worker/Trading.TradeProcessor.Worker.csproj" />

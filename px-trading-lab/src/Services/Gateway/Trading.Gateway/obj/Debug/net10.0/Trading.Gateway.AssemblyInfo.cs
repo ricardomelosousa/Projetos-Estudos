@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trading.Gateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e708af1735743776dab70840a2b538dbc3b265fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c8cbe225b62049483ffb03895c49b4543f1f039")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trading.Gateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trading.Gateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

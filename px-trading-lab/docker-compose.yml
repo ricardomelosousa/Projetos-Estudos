@@ -51,6 +51,28 @@ services:
     networks:
       - trading-network
 
+  wallet-db:
+    image: postgres:18
+    container_name: trading-wallet-db
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d walletdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+    environment:
+      POSTGRES_DB: walletdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - wallet-data:/var/lib/postgresql
+
+    networks:
+    - trading-network
 
   kafka:
     image: apache/kafka:4.3.1
@@ -140,6 +162,22 @@ services:
           --partitions 3
           --replication-factor 1;
 
+        /opt/kafka/bin/kafka-topics.sh
+           --bootstrap-server kafka:9092
+           --create
+           --if-not-exists
+           --topic funds.reserved
+           --partitions 3
+           --replication-factor 1;
+
+        /opt/kafka/bin/kafka-topics.sh
+          --bootstrap-server kafka:9092
+          --create
+          --if-not-exists
+          --topic funds.reservation-failed
+          --partitions 3
+          --replication-factor 1;
+
         echo 'Tópicos disponíveis:' ;
 
         /opt/kafka/bin/kafka-topics.sh
@@ -177,6 +215,40 @@ services:
     networks:
       - trading-network
 
+  wallet-api:
+    build:
+      context: .
+      dockerfile: src/Services/Wallets/Trading.Wallet.Api/Dockerfile
+
+    container_name: trading-wallet-api
+
+    depends_on:
+      wallet-db:
+        condition: service_healthy
+      kafka:
+        condition: service_started
+
+    ports:
+     - "8082:8080"
+
+    environment:
+      ConnectionStrings__WalletDatabase: >
+        Host=wallet-db;
+        Port=5432;
+        Database=walletdb;
+        Username=postgres;
+        Password=postgres
+
+      Kafka__BootstrapServers: kafka:9092
+
+      Kafka__Topics__OrderCreated: orders.created
+
+      Kafka__Topics__FundsReserved: funds.reserved
+
+      Kafka__Topics__FundsReservationFailed:
+        funds-reservation-failed
+    networks:
+      - trading-network
 
   trade-processor:
     container_name: trading-trade-processor
@@ -237,9 +309,7 @@ networks:
 
 
 volumes:
-
   trading-orders-postgres-data:
-
   trading-trades-postgres-data:
-
   kafka-data:
+  wallet-data:
