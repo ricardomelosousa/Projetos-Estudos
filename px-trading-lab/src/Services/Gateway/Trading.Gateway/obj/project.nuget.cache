@@ -1,9 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "T0/krYbwciE=",
+  "dgSpecHash": "+TvFGK+xb1w=",
   "success": true,
   "projectFilePath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Gateway\\Trading.Gateway\\Trading.Gateway.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry\\1.18.0\\opentelemetry.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.api\\1.18.0\\opentelemetry.api.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.18.0\\opentelemetry.api.providerbuilderextensions.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.18.0\\opentelemetry.exporter.opentelemetryprotocol.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.18.0\\opentelemetry.extensions.hosting.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.18.0\\opentelemetry.instrumentation.aspnetcore.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.entityframeworkcore\\1.18.0-beta.1\\opentelemetry.instrumentation.entityframeworkcore.1.18.0-beta.1.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.18.0\\opentelemetry.instrumentation.http.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.runtime\\1.18.0\\opentelemetry.instrumentation.runtime.1.18.0.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
     "C:\\Users\\ricardo\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],

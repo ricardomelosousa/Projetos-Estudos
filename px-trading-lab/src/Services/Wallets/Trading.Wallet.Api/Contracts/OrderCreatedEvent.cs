@@ -1,6 +1,7 @@
 ﻿namespace Trading.Wallet.Api.Contracts
 {
     public record OrderCreatedEvent(
+        Guid MessageId,
         Guid OrderId,
         Guid InvestorId,
         string Symbol,

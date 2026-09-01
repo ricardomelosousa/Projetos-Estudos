@@ -204,6 +204,9 @@ services:
 
       Kafka__BootstrapServers: kafka:9092
       Kafka__Topics__OrderCreated: orders.created
+      OTEL_SERVICE_NAME: trading-orders-api
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+      OTEL_EXPORTER_OTLP_PROTOCOL: grpc
 
     depends_on:
       orders-postgres:
@@ -227,6 +230,8 @@ services:
         condition: service_healthy
       kafka:
         condition: service_started
+      otel-collector:
+        condition: service_started
 
     ports:
      - "8082:8080"
@@ -247,6 +252,10 @@ services:
 
       Kafka__Topics__FundsReservationFailed:
         funds-reservation-failed
+
+      OTEL_SERVICE_NAME: trading-wallet-api
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
+      OTEL_EXPORTER_OTLP_PROTOCOL: grpc
     networks:
       - trading-network
 
@@ -297,6 +306,29 @@ services:
 
     depends_on:
       - orders-api
+
+    networks:
+      - trading-network
+
+  otel-collector:
+
+    image: otel/opentelemetry-collector-contrib:latest
+
+    container_name: trading-otel-collector
+
+    command:
+      - "--config=/etc/otelcol-contrib/config.yaml"
+
+    environment:
+     DT_ENDPOINT: ${DT_ENDPOINT}
+     DT_API_TOKEN: ${DT_API_TOKEN}
+
+    volumes:
+      - ./observability/otel-collector-config.yaml:/etc/otelcol-contrib/config.yaml
+
+    ports:
+      - "4317:4317"
+      - "4318:4318"
 
     networks:
       - trading-network

@@ -33,3 +33,12 @@ C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\De
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\ref\Trading.Market.Api.dll
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\Trading.Market.Api.sourcelink.json
 C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Api.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Exporter.OpenTelemetryProtocol.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Extensions.Hosting.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.EntityFrameworkCore.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Http.dll
+C:\Projetos Estudos\px-trading-lab\src\Services\Market\Trading.Market.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Runtime.dll

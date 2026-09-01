@@ -1,17 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "XNleqYrSDjU=",
+  "dgSpecHash": "7PmDeMB3LfM=",
   "success": true,
   "projectFilePath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Market\\Trading.Market.Api\\Trading.Market.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
-    "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\ricardo\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry\\1.18.0\\opentelemetry.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.api\\1.18.0\\opentelemetry.api.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.18.0\\opentelemetry.api.providerbuilderextensions.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.exporter.opentelemetryprotocol\\1.18.0\\opentelemetry.exporter.opentelemetryprotocol.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.18.0\\opentelemetry.extensions.hosting.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.18.0\\opentelemetry.instrumentation.aspnetcore.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.entityframeworkcore\\1.18.0-beta.1\\opentelemetry.instrumentation.entityframeworkcore.1.18.0-beta.1.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.18.0\\opentelemetry.instrumentation.http.1.18.0.nupkg.sha512",
+    "C:\\Users\\ricardo\\.nuget\\packages\\opentelemetry.instrumentation.runtime\\1.18.0\\opentelemetry.instrumentation.runtime.1.18.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
       "projectPath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Market\\Trading.Market.Api\\Trading.Market.Api.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Market\\Trading.Market.Api\\Trading.Market.Api.csproj",

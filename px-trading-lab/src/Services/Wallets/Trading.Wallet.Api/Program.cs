@@ -1,6 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using Trading.Wallet.Api.Consumers;
 using Trading.Wallet.Api.Infrastructure.Persistence;
+using Trading.Wallet.Api.Observability;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +15,45 @@ builder.Services.AddDbContext<WalletDbContext>(options =>
 
 builder.Services.AddHostedService<OrderCreatedConsumer>();
 
+builder.Services
+    .AddOpenTelemetry()
+    .ConfigureResource(resource =>
+    {
+        resource.AddService(
+            serviceName: "trading-wallet-api",
+            serviceVersion: "1.0.0");
+    })
+    .WithTracing(tracing =>
+    {
+        tracing
+            .SetSampler(new AlwaysOnSampler())
+            .AddSource(WalletTelemetry.ActivitySourceName)
+            .AddAspNetCoreInstrumentation()
+            .AddHttpClientInstrumentation()
+            .AddEntityFrameworkCoreInstrumentation()
+            .AddOtlpExporter();
+    })
+    .WithMetrics(metrics =>
+    {
+        metrics
+            .AddMeter(WalletMetrics.MeterName)
+            .AddAspNetCoreInstrumentation()
+            .AddHttpClientInstrumentation()
+            .AddRuntimeInstrumentation()
+            .AddOtlpExporter();
+    });
+
+builder.Services.AddControllers();
+
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider
+        .GetRequiredService<WalletDbContext>();
+
+    dbContext.Database.Migrate();
+}
 
 app.MapGet("/health", () =>
     Results.Ok(new
@@ -44,13 +86,7 @@ app.MapPost(
             wallet);
     });
 
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider
-        .GetRequiredService<WalletDbContext>();
 
-    dbContext.Database.Migrate();
-}
 
 app.Run();
 

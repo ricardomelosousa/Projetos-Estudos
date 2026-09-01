@@ -56,6 +56,30 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.10, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Instrumentation.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[1.18.0-beta.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.18.0, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.18.0, )"
             }
           },
           "imports": [

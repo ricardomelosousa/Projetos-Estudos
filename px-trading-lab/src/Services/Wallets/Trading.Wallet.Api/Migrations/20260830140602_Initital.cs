@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Trading.Wallet.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialWallet : Migration
+    public partial class Initital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -25,6 +25,20 @@ namespace Trading.Wallet.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OutboxMessages", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "processed_messages",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    MessageId = table.Column<Guid>(type: "uuid", maxLength: 100, nullable: false),
+                    Consumer = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    ProcessedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_processed_messages", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,6 +73,12 @@ namespace Trading.Wallet.Api.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_processed_messages_MessageId_Consumer",
+                table: "processed_messages",
+                columns: new[] { "MessageId", "Consumer" },
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Reservations_OrderId",
                 table: "Reservations",
                 column: "OrderId",
@@ -76,6 +96,9 @@ namespace Trading.Wallet.Api.Migrations
         {
             migrationBuilder.DropTable(
                 name: "OutboxMessages");
+
+            migrationBuilder.DropTable(
+                name: "processed_messages");
 
             migrationBuilder.DropTable(
                 name: "Reservations");
