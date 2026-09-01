@@ -17,3 +17,4 @@
 packages/
 .nuget/
 /px-trading-lab/src/Services/Gateway/Trading.Gateway/obj/Debug/net10.0/Trading.Gateway.GeneratedMSBuildEditorConfig.editorconfig
+/px-trading-lab/.env

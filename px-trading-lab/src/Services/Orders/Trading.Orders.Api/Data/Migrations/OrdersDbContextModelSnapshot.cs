@@ -106,6 +106,12 @@ namespace Trading.Orders.Api.Data.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("retry_count");
 
+                    b.Property<string>("TraceParent")
+                        .HasColumnType("text");
+
+                    b.Property<string>("TraceState")
+                        .HasColumnType("text");
+
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasMaxLength(200)

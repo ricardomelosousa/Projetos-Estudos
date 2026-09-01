@@ -1,7 +1,10 @@
 ﻿using Confluent.Kafka;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using System.Text;
 using Trading.Orders.Api.Configuration;
 using Trading.Orders.Api.Data;
+using Trading.Orders.Api.Observability;
 
 namespace Trading.Orders.Api.BackgroundServices
 {
@@ -57,7 +60,38 @@ namespace Trading.Orders.Api.BackgroundServices
             {
                 try
                 {
-                    var result = await producer.ProduceAsync(_kafkaOptions.Topics.OrderCreated, new Message<string, string> { Key = message.Id.ToString(), Value = message.Payload }, cancellation);
+                    var headers = new Headers();
+
+                    if (!string.IsNullOrWhiteSpace(
+                        message.TraceParent))
+                    {
+                        headers.Add(
+                            "traceparent",
+                            Encoding.UTF8.GetBytes(
+                                message.TraceParent));
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(
+                        message.TraceState))
+                    {
+                        headers.Add(
+                            "tracestate",
+                            Encoding.UTF8.GetBytes(
+                                message.TraceState));
+                    }
+
+
+                    var message_broker =
+                                 new Message<string, string>
+                                 {
+                                     Key = message.Id.ToString(),
+                                     Value = message.Payload,
+                                     Headers = headers
+                                 };
+
+
+
+                    var result = await producer.ProduceAsync(_kafkaOptions.Topics.OrderCreated, message_broker, cancellation);
                     message.ProcessedAt = DateTimeOffset.UtcNow;
                     message.Error = null;
                     _logger.LogInformation("Outbox message {MessageId} published to topic {Topic}, partition {Partition}, offeset {Offset}",
@@ -65,13 +99,51 @@ namespace Trading.Orders.Api.BackgroundServices
                         result.Topic,
                         result.Partition.Value,
                         result.Offset.Value);
+                    ActivityContext parentContext = default;
+                    if (!string.IsNullOrWhiteSpace(message.TraceParent))
+                    {
+                        ActivityContext.TryParse(
+                            message.TraceParent,
+                            message.TraceState,
+                            out parentContext);
+                    }
+                    _logger.LogInformation("OUTBOX TRACE - MessageId={MessageId} ParentValid={ParentValid} ParentTraceId={ParentTraceId} ParentSpanId={ParentSpanId}",
+                                            message.Id,
+                                            parentContext != default,
+                                            parentContext.TraceId,
+                                            parentContext.SpanId);
+
+                    using var activity = OrdersTelemetry.ActivitySource.StartActivity("kafka.publish.orders-created", ActivityKind.Producer, parentContext);
+
+                    _logger.LogInformation("KAFKA PRODUCER TRACE - ActivityCreated={Created} TraceId={TraceId} SpanId={SpanId} ParentSpanId={ParentSpanId}",
+                                            activity is not null,
+                                            activity?.TraceId,
+                                            activity?.SpanId,
+                                            activity?.ParentSpanId);
+
+                    activity?.SetTag(
+                         "messaging.system",
+                         "kafka");
+
+                    activity?.SetTag(
+                        "messaging.destination.name",
+                        _kafkaOptions.Topics.OrderCreated);
+
+                    activity?.SetTag(
+                        "messaging.operation",
+                        "publish");
+
+                    activity?.SetTag(
+                        "messaging.message.id",
+                        message.Id);
+
                 }
                 catch (Exception ex)
                 {
                     message.RetryCount++;
                     message.Error = ex.Message;
 
-                    _logger.LogError(ex, "Failed to publish outbox message {MessageId}", message.Id);                    
+                    _logger.LogError(ex, "Failed to publish outbox message {MessageId}", message.Id);
                 }
             }
             await dbContext.SaveChangesAsync(cancellation);

@@ -12,8 +12,8 @@ using Trading.Wallet.Api.Infrastructure.Persistence;
 namespace Trading.Wallet.Api.Migrations
 {
     [DbContext(typeof(WalletDbContext))]
-    [Migration("20260829034230_InitialWallet")]
-    partial class InitialWallet
+    [Migration("20260830140602_Initital")]
+    partial class Initital
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,6 +51,32 @@ namespace Trading.Wallet.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("OutboxMessages");
+                });
+
+            modelBuilder.Entity("Trading.Wallet.Api.Domain.Entities.ProcessedMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Consumer")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<Guid>("MessageId")
+                        .HasMaxLength(100)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("ProcessedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MessageId", "Consumer")
+                        .IsUnique();
+
+                    b.ToTable("processed_messages", (string)null);
                 });
 
             modelBuilder.Entity("Trading.Wallet.Api.Domain.Entities.Wallet", b =>

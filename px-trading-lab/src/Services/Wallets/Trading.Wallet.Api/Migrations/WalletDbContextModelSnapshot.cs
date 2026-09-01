@@ -50,6 +50,32 @@ namespace Trading.Wallet.Api.Migrations
                     b.ToTable("OutboxMessages");
                 });
 
+            modelBuilder.Entity("Trading.Wallet.Api.Domain.Entities.ProcessedMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Consumer")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<Guid>("MessageId")
+                        .HasMaxLength(100)
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("ProcessedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MessageId", "Consumer")
+                        .IsUnique();
+
+                    b.ToTable("processed_messages", (string)null);
+                });
+
             modelBuilder.Entity("Trading.Wallet.Api.Domain.Entities.Wallet", b =>
                 {
                     b.Property<Guid>("Id")

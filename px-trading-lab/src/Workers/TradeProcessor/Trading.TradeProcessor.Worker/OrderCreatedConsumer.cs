@@ -1,11 +1,14 @@
 using Confluent.Kafka;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using System.Diagnostics;
+using System.Text;
 using System.Text.Json;
 using Trading.TradeProcessor.Worker.Configuration;
 using Trading.TradeProcessor.Worker.Contracts;
 using Trading.TradeProcessor.Worker.Domain;
 using Trading.TradeProcessor.Worker.Infrastructure;
-using Microsoft.EntityFrameworkCore;
+using Trading.TradeProcessor.Worker.Observability;
 
 namespace Trading.TradeProcessor.Worker;
 
@@ -59,6 +62,68 @@ public sealed class OrderCreatedConsumer : BackgroundService
                 {
                     continue;
                 }
+                #region Observabilidade 
+
+                var traceParent = GetMessageBrokerHeader(result.Message.Headers, "traceparent");
+
+                var traceState = GetMessageBrokerHeader(result.Message.Headers, "tracestate");
+
+                _logger.LogInformation("TRADE KAFKA HEADER - TraceParent={TraceParent} TraceState={TraceState}",
+                                        traceParent,
+                                        traceState);
+
+                ActivityContext parentContext = default;
+
+                if (!string.IsNullOrWhiteSpace(traceParent))
+                {
+                    ActivityContext.TryParse(
+                        traceParent,
+                        traceState,
+                        out parentContext);
+                }
+
+                _logger.LogInformation("TRADE PARENT CONTEXT - Valid={Valid} TraceId={TraceId} SpanId={SpanId}",
+                                         parentContext != default,
+                                         parentContext.TraceId,
+                                         parentContext.SpanId);
+
+                using var activity = TradeProcessorTelemetry.ActivitySource.StartActivity("trade.consume.order-created", ActivityKind.Consumer, parentContext);
+
+                _logger.LogInformation("TRADE ACTIVITY - Created={Created} TraceId={TraceId} SpanId={SpanId} ParentSpanId={ParentSpanId}",
+                                        activity is not null,
+                                        activity?.TraceId,
+                                        activity?.SpanId,
+                                        activity?.ParentSpanId);
+
+                activity?.SetTag(
+                    "messaging.system",
+                    "kafka");
+
+                activity?.SetTag(
+                    "messaging.destination.name",
+                    result.Topic);
+
+                activity?.SetTag(
+                    "messaging.kafka.partition",
+                    result.Partition.Value);
+
+                activity?.SetTag(
+                    "messaging.kafka.offset",
+                    result.Offset.Value);
+
+                activity?.SetTag(
+                    "trading.order.id",
+                    message.OrderId);
+
+                activity?.SetTag(
+                    "trading.message.id",
+                    message.MessageId);
+
+                activity?.SetTag(
+                    "trading.order.symbol",
+                    message.Symbol);
+
+                #endregion
 
                 await ProcessMessageAsync(message, stoppingToken);
 
@@ -82,7 +147,7 @@ public sealed class OrderCreatedConsumer : BackgroundService
             scope.ServiceProvider
                 .GetRequiredService<TradeDbContext>();
 
-        var alreadyProcessed =  await dbContext.ProcessedMessages.AnyAsync(
+        var alreadyProcessed = await dbContext.ProcessedMessages.AnyAsync(
                     x => x.MessageId == message.MessageId,
                     cancellationToken);
 
@@ -140,5 +205,20 @@ public sealed class OrderCreatedConsumer : BackgroundService
             "Trade executado. OrderId: {OrderId} TradeId: {TradeId}",
             trade.OrderId,
             trade.Id);
+    }
+
+    private static string? GetMessageBrokerHeader(
+Headers headers,
+string key)
+    {
+        var header =
+            headers.LastOrDefault(
+                x => x.Key == key);
+
+        if (header is null)
+            return null;
+
+        return Encoding.UTF8.GetString(
+            header.GetValueBytes());
     }
 }

@@ -21,7 +21,7 @@ namespace Trading.Wallet.Api.Infrastructure.Persistence
 
         public DbSet<OutboxMessage> OutboxMessages =>
             Set<OutboxMessage>();
-
+        public DbSet<ProcessedMessage> ProcessedMessages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Domain.Entities.Wallet>()
@@ -43,6 +43,32 @@ namespace Trading.Wallet.Api.Infrastructure.Persistence
             modelBuilder.Entity<WalletReservation>()
                 .Property(x => x.Amount)
                 .HasPrecision(18, 2);
+
+            modelBuilder.Entity<ProcessedMessage>(entity =>
+            {
+                entity.ToTable("processed_messages");
+
+                entity.HasKey(x => x.Id);
+
+                entity.Property(x => x.MessageId)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(x => x.Consumer)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(x => x.ProcessedAt)
+                    .IsRequired();
+
+                entity.HasIndex(x => new
+                {
+                    x.MessageId,
+                    x.Consumer
+                })
+                .IsUnique();
+            });
+
         }
     }
 

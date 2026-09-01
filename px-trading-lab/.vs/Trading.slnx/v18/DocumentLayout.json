@@ -7,20 +7,52 @@
       "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Projetos Estudos\\px-trading-lab\\observability\\otel-collector-config.yaml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:observability\\otel-collector-config.yaml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\trading.orders.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\trading.orders.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Projetos Estudos\\px-trading-lab\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\wallets\\trading.wallet.api\\infrastructure\\persistence\\walletdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|solutionrelative:src\\services\\wallets\\trading.wallet.api\\infrastructure\\persistence\\walletdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\wallets\\trading.wallet.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|solutionrelative:src\\services\\wallets\\trading.wallet.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\contracts\\events\\ordercreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\contracts\\events\\ordercreatedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\wallets\\trading.wallet.api\\consumers\\ordercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|solutionrelative:src\\services\\wallets\\trading.wallet.api\\consumers\\ordercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\contracts\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\contracts\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\wallets\\trading.wallet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDCAC088-CC6E-7E82-A524-49AFAA9F83C7}|src\\Services\\Wallets\\Trading.Wallet.Api\\Trading.Wallet.Api.csproj|solutionrelative:src\\services\\wallets\\trading.wallet.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\observability\\ordersmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\observability\\ordersmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7E26D9-3B04-2ADD-2A2F-D66FC794AA20}|src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Trading.TradeProcessor.Worker.csproj|c:\\projetos estudos\\px-trading-lab\\src\\workers\\tradeprocessor\\trading.tradeprocessor.worker\\ordercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7E26D9-3B04-2ADD-2A2F-D66FC794AA20}|src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Trading.TradeProcessor.Worker.csproj|solutionrelative:src\\workers\\tradeprocessor\\trading.tradeprocessor.worker\\ordercreatedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|c:\\projetos estudos\\px-trading-lab\\src\\services\\orders\\trading.orders.api\\backgroundservices\\outboxpublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBF8AD24-D018-8DC9-588D-A45E0655704A}|src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj|solutionrelative:src\\services\\orders\\trading.orders.api\\backgroundservices\\outboxpublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C7E26D9-3B04-2ADD-2A2F-D66FC794AA20}|src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Trading.TradeProcessor.Worker.csproj|c:\\projetos estudos\\px-trading-lab\\src\\workers\\tradeprocessor\\trading.tradeprocessor.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C7E26D9-3B04-2ADD-2A2F-D66FC794AA20}|src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Trading.TradeProcessor.Worker.csproj|solutionrelative:src\\workers\\tradeprocessor\\trading.tradeprocessor.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +62,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-31T20:44:08.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderCreatedEvent.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\Events\\OrderCreatedEvent.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\Events\\OrderCreatedEvent.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\Events\\OrderCreatedEvent.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\Events\\OrderCreatedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T19:57:10.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateOrderRequest.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\CreateOrderRequest.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\CreateOrderRequest.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\CreateOrderRequest.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Contracts\\CreateOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T19:55:21.519Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,62 +111,131 @@
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAADMAAAAAAAAAAADwv0cAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADIBAAAAAAAAAAAMwD4BAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-08-29T03:46:12.82Z",
+              "WhenOpened": "2026-08-31T19:28:30.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20260829034230_InitialWallet.cs",
-              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs",
-              "RelativeDocumentMoniker": "src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs",
-              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs",
-              "RelativeToolTip": "src\\Services\\Wallets\\Trading.Wallet.Api\\Migrations\\20260829034230_InitialWallet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T03:42:31.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Trading.Orders.Api",
-              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj",
-              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj",
-              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj",
-              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Trading.Orders.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-29T03:39:51.058Z",
+              "Title": "otel-collector-config.yaml",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\observability\\otel-collector-config.yaml",
+              "RelativeDocumentMoniker": "observability\\otel-collector-config.yaml",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\observability\\otel-collector-config.yaml",
+              "RelativeToolTip": "observability\\otel-collector-config.yaml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-08-31T19:05:26.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WalletDbContext.cs",
-              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Infrastructure\\Persistence\\WalletDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Services\\Wallets\\Trading.Wallet.Api\\Infrastructure\\Persistence\\WalletDbContext.cs",
-              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Infrastructure\\Persistence\\WalletDbContext.cs",
-              "RelativeToolTip": "src\\Services\\Wallets\\Trading.Wallet.Api\\Infrastructure\\Persistence\\WalletDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Program.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAcwJQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-29T03:36:15.954Z",
+              "WhenOpened": "2026-08-31T02:23:45.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Services\\Wallets\\Trading.Wallet.Api\\appsettings.json",
-              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\appsettings.json",
-              "RelativeToolTip": "src\\Services\\Wallets\\Trading.Wallet.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-29T03:36:02.117Z",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Wallets\\Trading.Wallet.Api\\Program.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Program.cs",
+              "RelativeToolTip": "src\\Services\\Wallets\\Trading.Wallet.Api\\Program.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswCoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T18:23:15.249Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Consumers\\OrderCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Wallets\\Trading.Wallet.Api\\Consumers\\OrderCreatedConsumer.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Wallets\\Trading.Wallet.Api\\Consumers\\OrderCreatedConsumer.cs",
+              "RelativeToolTip": "src\\Services\\Wallets\\Trading.Wallet.Api\\Consumers\\OrderCreatedConsumer.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAswBUBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T18:43:40.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Dockerfile",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Dockerfile",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Dockerfile",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-31T19:15:12.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdersMetrics.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Observability\\OrdersMetrics.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\Observability\\OrdersMetrics.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\Observability\\OrdersMetrics.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\Observability\\OrdersMetrics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T19:01:25.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderCreatedConsumer.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\OrderCreatedConsumer.cs",
+              "RelativeDocumentMoniker": "src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\OrderCreatedConsumer.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\OrderCreatedConsumer.cs",
+              "RelativeToolTip": "src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\OrderCreatedConsumer.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAAFkAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T18:29:25.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OutboxPublisherService.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "RelativeDocumentMoniker": "src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "RelativeToolTip": "src\\Services\\Orders\\Trading.Orders.Api\\BackgroundServices\\OutboxPublisherService.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAowHkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T18:24:39.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos Estudos\\px-trading-lab\\src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Program.cs",
+              "ToolTip": "C:\\Projetos Estudos\\px-trading-lab\\src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Program.cs",
+              "RelativeToolTip": "src\\Workers\\TradeProcessor\\Trading.TradeProcessor.Worker\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T18:23:37.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
